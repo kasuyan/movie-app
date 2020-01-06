@@ -6,7 +6,7 @@ import Detail from '../components/pages/Detail';
 const Routes = () => (
 	<Switch>
 		<Route exact path="/" component={Home} />
-		<Route path="/detail" component={Detail} />
+		<Route path="/detail/:movieId" component={Detail} />
 	</Switch>
 );
 
