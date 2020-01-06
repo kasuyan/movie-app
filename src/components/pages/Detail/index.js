@@ -1,7 +1,10 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 
 const DetailPage = () => {
-  return (<section>Detail Pages</section>)
-}
+	useEffect(() => {
+		console.log('didmount');
+	});
+	return <section>Detail Pages</section>;
+};
 
-export default DetailPage
+export default DetailPage;
