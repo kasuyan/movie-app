@@ -27,6 +27,15 @@ const Anchor = styled(Link)`
     background-color: #D9BC66;
   }
 
+
+  :hover img,
+  :focus img {
+    transform: scale(1.1,1.1);
+    transition-duration: 0.2s;
+    opacity: 0.8;
+    background-color: #000;
+  }
+
   :focus {
     box-shadow: rgba(139, 215, 186, 0.6) 0px 0px 0px 4px;
     outline: none;

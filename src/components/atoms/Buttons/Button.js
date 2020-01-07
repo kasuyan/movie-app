@@ -12,9 +12,11 @@ const Button = ({ children, onClick, type = 'button' }) => {
 const StyledButton = styled.button`
 	border: 2px solid #735c32;
 	border-left: none;
+	height: 2rem;
 	width: 20%;
 	border-radius: 0 0.5rem 0.5rem 0;
 	background-color: #d9bc66;
+	box-sizing: border-box;
 `;
 
 export default Button;

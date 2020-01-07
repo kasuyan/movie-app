@@ -29,6 +29,9 @@ const SearchBox = ({ search }) => {
 const Form = styled.form`
 	display: flex;
 	padding: 0.5rem;
+	margin-bottom: 1rem;
+	align-items: flex-start;
+
 	background-color: #d9bc66;
 	:focus-within {
 		background-color: #f2a0b6;

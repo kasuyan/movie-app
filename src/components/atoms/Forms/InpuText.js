@@ -12,6 +12,7 @@ const StyledInput = styled.input`
 	height: 2rem;
 	padding: 0 0.5rem;
 	width: 80%;
+	box-sizing: border-box;
 `;
 
 export default InputText;
