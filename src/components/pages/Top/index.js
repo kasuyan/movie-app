@@ -6,8 +6,8 @@ import SearchBox from '../../molecules/SearchBox';
 import MovieCardList from '../../organisms/MovieCardList';
 
 import { initialState, reducer } from '../../store';
-// const MOVIE_API_URL = 'http://www.omdbapi.com/?s=star&apikey=fad91d1e&page=1';
-const MOVIE_API_URL = 'http://www.omdbapi.com/';
+const MOVIE_API_URL = 'http://www.omdbapi.com/?s=star&apikey=fad91d1e&page=1';
+// const MOVIE_API_URL = 'http://www.omdbapi.com/';
 
 const TopPage = () => {
 	const [ state, dispatch ] = useReducer(reducer, initialState);
