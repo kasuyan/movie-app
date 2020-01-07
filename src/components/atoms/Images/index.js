@@ -10,6 +10,6 @@ const Thumbnail = ({ src, alt, width, height, caption }) => (
 
 const ImageContainer = styled.figure`margin: 0;`;
 
-const Image = styled.img`width: 16rem;`;
+const Image = styled.img`width: 100%;`;
 
 export default Thumbnail;

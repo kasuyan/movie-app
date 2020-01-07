@@ -32,6 +32,8 @@ const CardsList = styled.ul`
 	padding: 0;
 	display: flex;
 	flex-wrap: wrap;
+	column-count: 2;
+	min-width: 320px;
 `;
 
 const CardListItem = styled.li`

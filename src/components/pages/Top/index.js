@@ -6,14 +6,14 @@ import SearchBox from '../../molecules/SearchBox';
 import MovieCardList from '../../organisms/MovieCardList';
 
 import { initialState, reducer } from '../../store';
-const MOVIE_API_URL = 'http://www.omdbapi.com/?s=star&apikey=fad91d1e&page=1';
-// const MOVIE_API_URL = 'http://www.omdbapi.com/';
+// const MOVIE_API_URL = 'http://www.omdbapi.com/?s=star&apikey=fad91d1e&page=1';
+const MOVIE_API_URL = 'http://www.omdbapi.com/';
 
 const TopPage = () => {
 	const [ state, dispatch ] = useReducer(reducer, initialState);
 
 	useEffect(() => {
-		axios.get(MOVIE_API_URL).then((res) => {
+		axios.get(`${MOVIE_API_URL}?s=star&apikey=fad91d1e`).then((res) => {
 			dispatch({
 				type: 'SEARCH_MOVIES_REQUEST',
 				payload: res.data.Search

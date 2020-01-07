@@ -18,12 +18,13 @@ const MovieCard = ({ title, id, src, labels }) => {
 };
 
 const Anchor = styled(Link)`
-  color: #222;
+  color: #735C32;
   display: block;
   transition: background-color 0.2s linear 0s;
+  padding: 0.5rem;
 
   :hover {
-    background-color: #ddd;
+    background-color: #D9BC66;
   }
 
   :focus {

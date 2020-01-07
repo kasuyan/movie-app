@@ -1,4 +1,6 @@
 import React, { useState } from 'react';
+import styled from 'styled-components';
+
 import InpuText from '../../atoms/Forms/InpuText';
 import Button from '../../atoms/Buttons/Button';
 
@@ -15,13 +17,22 @@ const SearchBox = ({ search }) => {
 	};
 
 	return (
-		<form>
+		<Form>
 			<InpuText value={searchValue} onChange={onSetSearchValue} />
 			<Button type="submit" onClick={onSearch}>
 				検索
 			</Button>
-		</form>
+		</Form>
 	);
 };
+
+const Form = styled.form`
+	display: flex;
+	padding: 0.5rem;
+	background-color: #d9bc66;
+	:focus-within {
+		background-color: #f2a0b6;
+	}
+`;
 
 export default SearchBox;
