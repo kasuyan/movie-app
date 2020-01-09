@@ -4,7 +4,7 @@ import axios from 'axios';
 import { initialState, reducer } from '../../store';
 import PageHeader from '../../atoms/Headers/PageHeader';
 import MovieDetail from '../../molecules/MovieDetail';
-const MOVIE_API_URL = 'http://www.omdbapi.com/?apikey=fad91d1e';
+const MOVIE_API_URL = 'https://www.omdbapi.com/?apikey=fad91d1e';
 
 const DetailPage = ({ match }) => {
 	const [ state, dispatch ] = useReducer(reducer, initialState);
