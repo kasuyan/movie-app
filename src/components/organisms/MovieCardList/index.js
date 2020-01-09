@@ -12,9 +12,8 @@ const MovieCardList = ({ data }) => {
 		<CardsList>
 			{data.map((item) => {
 				return (
-					<CardListItem>
+					<CardListItem key={item.imdbID}>
 						<MovieCard
-							key={item.imdbID}
 							id={item.imdbID}
 							title={item.Title}
 							src={item.Poster}

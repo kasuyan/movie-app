@@ -2,7 +2,9 @@ export const initialState = {
 	loading: false,
 	moiveList: [],
 	moiveDetail: null,
-	errorMessage: null
+	errorMessage: null,
+	pages: 1,
+	searchWord: 'star'
 };
 
 export const reducer = (state, action) => {
@@ -10,7 +12,14 @@ export const reducer = (state, action) => {
 		case 'SEARCH_MOVIES_REQUEST':
 			return {
 				...state,
-				moiveList: action.payload,
+				moiveList: action.payload || [],
+				loading: true,
+				errorMessage: null
+			};
+
+		case 'SEARCH_MOVIES_ADD_REQUEST':
+			return {
+				...state,
 				loading: true,
 				errorMessage: null
 			};
@@ -19,6 +28,7 @@ export const reducer = (state, action) => {
 			return {
 				...state,
 				moiveList: action.payload,
+				pages: ++state.pages,
 				loading: false
 			};
 
@@ -27,6 +37,12 @@ export const reducer = (state, action) => {
 				...state,
 				loading: false,
 				errorMessage: action.error
+			};
+
+		case 'SET_SEARCH_WORD':
+			return {
+				...state,
+				searchWord: action.payload
 			};
 
 		case 'GET_MOVIE_DETAIL_REQUEST':

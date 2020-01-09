@@ -5,7 +5,7 @@ import InpuText from '../../atoms/Forms/InpuText';
 import Button from '../../atoms/Buttons/Button';
 
 const SearchBox = ({ search }) => {
-	const [ searchValue, setValue ] = useState('');
+	const [ searchValue, setValue ] = useState('star');
 
 	const onSetSearchValue = (e) => {
 		setValue(e.target.value);
