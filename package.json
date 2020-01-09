@@ -8,6 +8,7 @@
 	"scripts": {
 		"dev": "webpack --mode development",
 		"deploy": "webpack --mode production",
+		"deploy:netlify": "yarn deploy && cp ./src/_redirects ./dist",
 		"start": "webpack-dev-server --open",
 		"ghp": "gh-pages -d dist"
 	},
